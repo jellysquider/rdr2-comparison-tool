@@ -1,4 +1,6 @@
-# rdr2-comparison-tool `[core functionality is under development]`
+# rdr2-comparison-tool 
+`Note: core functionality is under development`
+
 A simple website to compare weapons in Read Dead Redemption 2
 
 ## The goal
