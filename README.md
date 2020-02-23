@@ -15,10 +15,7 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
 * Run `npm start` inside of the root folder and head over to `localhost:3000`
 
 ### To-Do:
-- [ ] Fix the alignment of card stats
+- [x] Fix the alignment of card stats
 - [ ] Add search functionality
 - [ ] Add filter functionality
 - [ ] Add sort functionality
-
-### Known issues:
-* dependency XMasonry for the masonry-like grid uses 2 deprecated lifecycles `componentWillMount` and `componentWillReceiveProps`
