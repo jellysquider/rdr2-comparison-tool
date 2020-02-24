@@ -4,7 +4,7 @@
 A simple website to compare weapons in Read Dead Redemption 2
 
 ## The goal
-I love playing RDR2 but it's impossible to visually compare where exactly the bar moves on each weapon's property so I started looking online and found that it's either I get spoilers about super cool gun at the end of the game or I skim throught all kinds of tabled stats that are not sorted in any order and require a lot of time to get acquainted with.
+I love playing RDR2 but it's impossible to visually compare where exactly the bar moves on each weapon's property so I started looking online and found that it's either I get spoilers about super cool gun at the end of the game or I skim through all kinds of tabled stats that are not sorted in any order and require a lot of time to get acquainted with.
 
 So I decided to create a website that would let one sort, filter, and compare different weapons.
 
