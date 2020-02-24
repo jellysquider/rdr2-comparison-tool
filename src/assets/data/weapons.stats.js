@@ -3,9 +3,9 @@ const WEAPONS_STATS = [
     "id": 100,
     "title": "Pistols and Revolvers",
     "weaponsType": "Firearms",
-    "items": [
+    "weapons": [
       {
-        "weapon": "Algernon's Revolver",
+        "name": "Algernon's Revolver",
         "description": "Modified Double-action Revolver with a snub barrel, a customised grip and unique engravings.",
         "id": 1,
         "damage": 1.5,
@@ -23,7 +23,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/c/c9/RDR2_Weapon_DoubleActionRevolverAlgernon.jpg/revision/latest/scale-to-width-down/350?cb=20190125012428"
       },
       {
-        "weapon": "Calloway's Revolver",
+        "name": "Calloway's Revolver",
         "description": "A unique, custom-engraved Schofield Revolver plated in silver, with 'Canis Canem Edit' engraved into the side of the barrel. This sidearm previously belonged to the late gunslinger Jim 'Boy' Calloway, who was defeated in a duel at Brandywine Drop.",
         "id": 2,
         "damage": 1.9,
@@ -41,7 +41,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/f/ff/Calloway%E2%80%99s_revolver_compendium.jpeg/revision/latest?cb=20190126123731"
       },
       {
-        "weapon": "Cattleman Revolver",
+        "name": "Cattleman Revolver",
         "description": "A popular and classic sidearm, the Buck Cattleman is a great all-around revolver, featuring a good balance of damage, accuracy and fire rate.",
         "id": 3,
         "damage": 1.7,
@@ -59,7 +59,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/f/f9/Cattleman_Revolver_profile_RDRII.jpg/revision/latest?cb=20181121051735"
       },
       {
-        "weapon": "Double-Action Revolver",
+        "name": "Double-Action Revolver",
         "description": "The D.D. Packenbush Double-action Revolver is a fast-firing weapon with relatively low damage.",
         "id": 4,
         "damage": 1.5,
@@ -77,7 +77,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/5/5d/Doubleactionrevolverrdr2.jpeg/revision/latest?cb=20181124211649"
       },
       {
-        "weapon": "Flaco's Revolver",
+        "name": "Flaco's Revolver",
         "description": "A unique Cattleman Revolver, featuring delicate engravings and a carved ivory handle.  Previously owned by the late gunslinger Flaco Hernández, who was defeated in a duel at Cairn Lodge.",
         "id": 5,
         "damage": 1.7,
@@ -95,7 +95,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/2/2e/Flacosrevolver.jpeg/revision/latest/scale-to-width-down/350?cb=20181124212237"
       },
       {
-        "weapon": "Granger's Revolver",
+        "name": "Granger's Revolver",
         "description": "A unique Cattleman Revolver, with a dark metal finish and endorned in custom engravings. Previously owned by the late gunslinger Emmet Granger, who was defeated in a duel near Flatneck Station.",
         "id": 6,
         "damage": 1.7,
@@ -113,7 +113,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/2/2c/Grangergun.png/revision/latest?cb=20181123192847"
       },
       {
-        "weapon": "John's Cattleman Revolver",
+        "name": "John's Cattleman Revolver",
         "description": "Owned by John Marston, this Cattleman Revolver features a black steel frame and a custom bone grip, both of which show significant signs of wear.",
         "id": 7,
         "damage": 1.7,
@@ -131,7 +131,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/0/00/Johnscattlemanrdr2.jpeg/revision/latest/scale-to-width-down/350?cb=20181124212014"
       },
       {
-        "weapon": "M1899 Pistol",
+        "name": "M1899 Pistol",
         "description": "Only stocked by the best gunsmith in Saint Denis, the M1899 by Peeters & Janssens is a thoroughly modern sidearm. A semi-automatic handgun, the M1899 deals good damage at short range and its clip loaded ammunition allows for a swift reload.",
         "id": 8,
         "damage": 1.5,
@@ -149,7 +149,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/0/0b/M1899_Pistol2.png/revision/latest?cb=20191118141108"
       },
       {
-        "weapon": "Mauser Pistol",
+        "name": "Mauser Pistol",
         "description": "A new import from Germany, the Mühlberg Mauser is a modern semi-automatic pistol with a low damage. The rapid fire rate of this weapon, along with a large ammo capacity, make this a good choice for close range combat, or when surrounded by multiple enemies.",
         "id": 9,
         "damage": 1.4,
@@ -167,7 +167,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/7/77/Mauserpistolrdr2.jpeg/revision/latest?cb=20181124205631"
       },
       {
-        "weapon": "Micah's Revolver",
+        "name": "Micah's Revolver",
         "description": "One of the twin revolvers used by Micah Bell, this custom Double-action Revolver features a grey steel frame with a custom red-and-black skull grip. It also has 'Vengeance is hereby mine' hand etched into the side of the barrel.",
         "id": 10,
         "damage": 1.7,
@@ -185,7 +185,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/7/70/Micahs-revolver.jpg/revision/latest/scale-to-width-down/350?cb=20181120230620"
       },
       {
-        "weapon": "Midnight's Pistol",
+        "name": "Midnight's Pistol",
         "description": "A unique Mauser Pistol, this weapon is gold-plated and features engravings with a grey wooden grip. Previously owned by the late gunslinger Billy Midnight, defeated in a duel on a train departing Rhodes.",
         "id": 11,
         "damage": 1.4,
@@ -203,7 +203,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/c/cb/Midnightspistol.jpeg/revision/latest/scale-to-width-down/350?cb=20181124204930"
       },
       {
-        "weapon": "Otis Miller's Revolver",
+        "name": "Otis Miller's Revolver",
         "description": "A unique Schofield Revolver made of gold and ivory, and adorned with custom engravings. Found inside a cave in Cholla Springs, this weapon appears to have once been owned by the famed gunslinger Otis Miller.",
         "id": 12,
         "damage": 1.9,
@@ -221,7 +221,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/d/d3/Otismillerrevolver.jpg/revision/latest/scale-to-width-down/350?cb=20181123193521"
       },
       {
-        "weapon": "Schofield Revolver",
+        "name": "Schofield Revolver",
         "description": "The powerful Hutton & Baird Schofield is an accurate revolver with high damage, making a good choice for any serious gunslinger. Despite a slower firing rate and reload speed, when compared with other revolvers, it can still be dual wielded to great effect.",
         "id": 13,
         "damage": 1.9,
@@ -239,7 +239,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/4/45/Schofieldrevolverrdr2.jpeg/revision/latest?cb=20181124211103"
       },
       {
-        "weapon": "Semi-Automatic Pistol",
+        "name": "Semi-Automatic Pistol",
         "description": "The new Peeters and Janssens Semi-Automatic Pistol deals less damage than revolver sidearms, but makes up for it by doing away with the need for weapon cocking, as well as an expanded ammo capacity and quicker magazine reloads.",
         "id": 14,
         "damage": 1.2,
@@ -257,7 +257,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/5/53/Semiautomaticpistolcompendium.jpg/revision/latest?cb=20190610012735"
       },
       {
-        "weapon": "Volcanic Pistol",
+        "name": "Volcanic Pistol",
         "description": "The Hutton & Baird Volcanic Pistol combines the stopping power of a repeating rifle with the portability of a sidearm. Although the accuracy is good, the slow firing rate and reload speed mean that you'd better hit your target with the first shot.",
         "id": 15,
         "damage": 2.2,
@@ -280,9 +280,9 @@ const WEAPONS_STATS = [
     "id": 200,
     "title": "Rifles and Repeaters",
     "weaponsType": "Firearms",
-    "items": [
+    "weapons": [
       {
-        "weapon": "Bolt Action Rifle",
+        "name": "Bolt Action Rifle",
         "description": "The B.D. & Co. Bolt Action is a strong and versatile rifle, built to perform in any environment. The bolt-action mechanism allows for quick firing and reloading, making this rifle an ideal choice for long-range combat with multiple targets.",
         "id": 16,
         "damage": 2.9,
@@ -300,7 +300,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/b/b9/Bolt_Action_Rifle_Compendium_rdr2.jpg/revision/latest?cb=20190608014707"
       },
       {
-        "weapon": "Carbine Repeater",
+        "name": "Carbine Repeater",
         "description": "A reliable and popular repeating rifle, the Buck Carbine provides medium damage and a decent firing rate, with quick reload speeds thanks to the tube-loaded magazine in the weapon's stock.",
         "id": 17,
         "damage": 2.4,
@@ -318,7 +318,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/5/5b/Carbine_repeater_profile_rdr2.jpg/revision/latest?cb=20181123001158"
       },
       {
-        "weapon": "Carcano Rifle",
+        "name": "Carcano Rifle",
         "description": "The Sireno Carcano is a long scoped bolt-action rifle that can hold several rounds at once. When combined with the fast firing rate and quick reload speed, this makes it ideal for facing several enemies in long-distance combat.",
         "id": 18,
         "damage": 3.1,
@@ -336,7 +336,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/5/57/Carcanoriflecompendium.jpg/revision/latest?cb=20190610015255"
       },
       {
-        "weapon": "Lancaster Repeater",
+        "name": "Lancaster Repeater",
         "description": "The Lancaster Repeater is a well-rounded gun that uses a fast lever-action system to load the next cartridge. It has the lowest damage of all repeating rifles, but the quick firing rate and high accuracy give it the advantage.",
         "id": 19,
         "damage": 2.2,
@@ -354,7 +354,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/9/93/Lancasterrepeatercompendium.jpg/revision/latest?cb=20190610014544"
       },
       {
-        "weapon": "Litchfield Repeater",
+        "name": "Litchfield Repeater",
         "description": "The Litchfield Repeater is a great choice for hunting, with the best damage of all repeating rifles and a large ammo capacity. Despite a slower fire rate and reload speed, the Litchfield excels at medium range combat; perfect when needing to clear an area.",
         "id": 20,
         "damage": 2.8,
@@ -372,7 +372,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/4/46/RDR2-Compendium-Litchfield_Repeater-Photo.jpg/revision/latest?cb=20181115133210"
       },
       {
-        "weapon": "Rare Rolling Block Rifle",
+        "name": "Rare Rolling Block Rifle",
         "description": "A unique Rolling Block Rifle made of light wood and blackened steel, adorned with carvings. Previously belonging to a bounty hunter after Josiah Trelawny, this weapon can be found in a barn near Braithwaite Manor.",
         "id": 21,
         "damage": 3.5,
@@ -390,7 +390,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/e/e9/Rare_Rolling_Block_Rifle_rdr2.png/revision/latest/scale-to-width-down/350?cb=20181112234442"
       },
       {
-        "weapon": "Rolling Block Rifle",
+        "name": "Rolling Block Rifle",
         "description": "Designed for hunting large beasts, the Litchfield Rolling Block is a powerful long scoped rifle, designed for long-range combat. With multiple telescopic sights available in different zoom levels, a sharpshooter can eliminate a target from afar and gain the element of surprise.",
         "id": 22,
         "damage": 3.5,
@@ -408,7 +408,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/9/97/Rollingblockriflecompendium.jpg/revision/latest?cb=20190610015032"
       },
       {
-        "weapon": "Springfield Rifle",
+        "name": "Springfield Rifle",
         "description": "A military favorite, the Lancaster Springfield is a powerful breech-loading weapon designed for medium to long-range combat. The high accuracy makes this weapon effective against large mammals, but the slow firing rate may be an issue when trapped in close quarters.",
         "id": 23,
         "damage": 3.2,
@@ -426,7 +426,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/5/5e/Springfieldriflecompendium.jpg/revision/latest?cb=20190610014732"
       },
       {
-        "weapon": "Varmint Rifle",
+        "name": "Varmint Rifle",
         "description": "The quick-firing Lancaster Varmint Rifle is designed for hunting small mammals and large birds, using a special low-caliber type of ammunition with reduced damage. However, the large ammo capacity and fast fire rate make this an effective weapon against large groups of enemies.",
         "id": 24,
         "damage": 1.6,
@@ -449,9 +449,9 @@ const WEAPONS_STATS = [
     "id": 300,
     "title": "Shotguns",
     "weaponsType": "Firearms",
-    "items": [
+    "weapons": [
       {
-        "weapon": "Double-barreled Shotgun",
+        "name": "Double-barreled Shotgun",
         "description": "D.D. Packenbush's Double-Barreled Shotgun is the trailblazer's choice. Powerful and deadly at close range, this gun is capable of firing off two shots in quick succession, dropping nearly any target instantly.",
         "id": 25,
         "damage": 2.8,
@@ -469,7 +469,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/3/3f/Double-barrel-shotgun_profile_rdr2.jpg/revision/latest?cb=20181122235403"
       },
       {
-        "weapon": "Pump-action Shotgun",
+        "name": "Pump-action Shotgun",
         "description": "The high-powered Lancaster Pump Shotgun has a large ammo capacity and quick reload capacities. Despite average accuracy, this gun will hold true should you find yourself confronted by wild beast or man in close combat.",
         "id": 26,
         "damage": 2.5,
@@ -487,7 +487,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/a/af/Pump-Action_Shotgun_rdr2.png/revision/latest?cb=20190531072739"
       },
       {
-        "weapon": "Rare Shotgun",
+        "name": "Rare Shotgun",
         "description": "A rare Double-Barreled Shotgun with faded brass tarnish and adorned with carvings. Previously owned and cherished by a lonely woodsman living in solitude among the trees and wildlife of Roanoke Ridge.",
         "id": 27,
         "damage": 2.8,
@@ -505,7 +505,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/2/23/Rare_Shotgun_rdr2.jpg/revision/latest?cb=20181123000305"
       },
       {
-        "weapon": "Repeating Shotgun",
+        "name": "Repeating Shotgun",
         "description": "The Lancaster Repeating Shotgun is a well-rounded gun that uses the same lever-action system commonly found on repeating rifles. The large ammo capacity gives the shooter the luxury of accuracy while maintaining the power ideal for close-quarter encounters.",
         "id": 28,
         "damage": 2.5,
@@ -523,7 +523,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/b/b8/Repeatingshotguncompendium.jpg/revision/latest?cb=20190610015900"
       },
       {
-        "weapon": "Sawed-off Shotgun",
+        "name": "Sawed-off Shotgun",
         "description": "The Peeters & Janssens Sawed-Off is a versatile shotgun that can be used easily with one hand or dual wielded to great effect. Rough and deadly, but widely inaccurate, this weapon is ideal for close quarter combat on foot or on horseback.",
         "id": 29,
         "damage": 2.8,
@@ -541,7 +541,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/8/80/Sawedoffshotguncompendium.jpg/revision/latest?cb=20190610020213"
       },
       {
-        "weapon": "Semi-auto Shotgun",
+        "name": "Semi-auto Shotgun",
         "description": "The Brun et Fabre Semi-Auto packs both power and speed into one shotgun. Featuring a high rate of fire, quick reloads and adequate magazine size, this shotgun is perfect for short-range combat against multiple targets.",
         "id": 30,
         "damage": 2.2,
@@ -564,9 +564,9 @@ const WEAPONS_STATS = [
     "id": 400,
     "title": "Melee",
     "weaponsType": "Melee",
-    "items": [
+    "weapons": [
       {
-        "weapon": "Antler Knife",
+        "name": "Antler Knife",
         "description": "A rare knife, with a handle manufactured from the antler of a stag, and part of the blade snapped off near the crossguard.",
         "id": 31,
         "damage": 2,
@@ -574,7 +574,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/5/5f/Antler_Knife_RDRII.jpg/revision/latest/scale-to-width-down/350?cb=20181029013610"
       },
       {
-        "weapon": "Broken Pirate Sword",
+        "name": "Broken Pirate Sword",
         "description": "An old and rare pirate cutlass, with a long snapped blade and decorative golden handguard. With a longer range than most bladed melee weapon, this is still a practical combat weapon despite its age.",
         "id": 32,
         "damage": 2.1,
@@ -582,7 +582,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/b/b9/Broken_Pirate_Sword_RDRII.jpg/revision/latest?cb=20181029190123"
       },
       {
-        "weapon": "Civil War Knife",
+        "name": "Civil War Knife",
         "description": "An old Bowie Knife with a solid blade, worn wooden handle and large D-Shaped handguard for protection. This weapon was commonly used by Civil War soldiers, and is covered in rust.",
         "id": 33,
         "damage": 2,
@@ -590,7 +590,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/1/1a/Civil_War_Knife_Red_Dead_Redemption_II.jpg/revision/latest/scale-to-width-down/350?cb=20181029023908"
       },
       {
-        "weapon": "Cleaver",
+        "name": "Cleaver",
         "description": "A wide-bladed axe with a short ridged wooden handle, this hunting and cooking tool is usually used to prepare animal carcasses and chop through thick meat, cartilage and bone. As you can imagine, these properties also make for an effective combat weapon, and it can also be thrown.",
         "id": 34,
         "damage": null,
@@ -598,7 +598,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/6/60/Cleaverrdr2.jpeg/revision/latest?cb=20181124195917"
       },
       {
-        "weapon": "Double Bit Hatchet",
+        "name": "Double Bit Hatchet",
         "description": "The Double Bit Hatchet is a weapon featured in Red Dead Redemption 2. It cannot be customized.",
         "id": 35,
         "damage": 2.3,
@@ -606,7 +606,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/f/f5/Double_Bit_Hatchet_RDRII.jpg/revision/latest/scale-to-width-down/350?cb=20181029002559"
       },
       {
-        "weapon": "Fists",
+        "name": "Fists",
         "description": "Fists are used for unarmed combat. When fists are equipped, the player can also perform kicks and other melee moves.",
         "id": 36,
         "damage": 1.3,
@@ -614,7 +614,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/e/ef/RD2_Fists_Symbol.png/revision/latest/scale-to-width-down/350?cb=20191113013743"
       },
       {
-        "weapon": "Hatchet",
+        "name": "Hatchet",
         "description": "A basic hand axe, with a wedged steel blade and long wooden handle. Designed for chopping wood, this powerful one-handed weapon can be swung to deliver a large amount of damage to an opponent. In a pinch, it can also be thrown at a target to take them down from a distance.",
         "id": 37,
         "damage": 2.3,
@@ -622,7 +622,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/d/da/Hatchetrdr2.jpeg/revision/latest?cb=20181124192952"
       },
       {
-        "weapon": "Hewing Hatchet",
+        "name": "Hewing Hatchet",
         "description": "This old and worn Hatchet has a flat edge along one side of the blade and is designed for hewing, the process of converting logs into lumber. This melee weapon was found in a tree stump near Moonstone Pond in the Grizzlies, next to an abandoned shack. This Hatchet can also be thrown.",
         "id": 38,
         "damage": 2.3,
@@ -630,7 +630,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/4/42/HewingHatchetrdr2compendium.jpg/revision/latest?cb=20190608210122"
       },
       {
-        "weapon": "Hunter Hatchet",
+        "name": "Hunter Hatchet",
         "description": "This hatchet is found in a tree stump south of Window Rock in Grizzlies West. In Online, the hatchet can be bought at any Fence.",
         "id": 39,
         "damage": 2.3,
@@ -638,7 +638,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/1/1c/Hunter_Hatchet-Red_Dead_Redemption_II.png/revision/latest?cb=20181028184749"
       },
       {
-        "weapon": "Jawbone Knife",
+        "name": "Jawbone Knife",
         "description": "Deborah MacGuiness believes it's made of stegosaurus bone, but in reality, it's actually made of a common coyote jawbone.",
         "id": 40,
         "damage": 2,
@@ -646,7 +646,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/4/4b/Jawbone_Knife.png/revision/latest/scale-to-width-down/1000?cb=20190529013945"
       },
       {
-        "weapon": "John'sKnife",
+        "name": "John'sKnife",
         "description": "Owned by John Marston, this sturdy hunting knife combines a deadly clip-point blade with a narrow wooden handle. It is slightly smaller than the default Hunting Knife, although it performs just the same. Along with his revolver, John can be seen with this weapon in 1899 during his time in the gang.",
         "id": 41,
         "damage": 2,
@@ -654,7 +654,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/e/e8/Johnsknife.jpeg/revision/latest/scale-to-width-down/350?cb=20181124193509"
       },
       {
-        "weapon": "Machete",
+        "name": "Machete",
         "description": "With a sharp broad blade, the Machete is designed for harvesting sugar cane, or clearing through forest undergrowth. However, this doesn't stop it from being an effective melee weapon with a longer range than most. One strong hack with this weapon will take any target down quickly and quietly.",
         "id": 42,
         "damage": null,
@@ -662,7 +662,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/9/9f/Macheterdr2.jpeg/revision/latest?cb=20181124194332"
       },
       {
-        "weapon": "Ornate Dagger",
+        "name": "Ornate Dagger",
         "description": "The Ornate Dagger is a short melee weapon, featuring a decorated, silver blade. It deals a moderate amount of damage and is very short-ranged.",
         "id": 43,
         "damage": 2,
@@ -670,7 +670,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/7/7d/Ornate_Dagger_RDR2.jpg/revision/latest/scale-to-width-down/350?cb=20181109031654"
       },
       {
-        "weapon": "Rusted Double Bit Hatchet",
+        "name": "Rusted Double Bit Hatchet",
         "description": "A rare Hatchet, featuring a rusted double-bladed head: one razor-sharp side for chopping and cutting; and a dull side for splitting wood. This melee weapon was found in a tree stump near the Annesburg Mine in Roanoke Ridge and, has seemingly been worn by the elements over time.",
         "id": 44,
         "damage": 2.3,
@@ -678,7 +678,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/e/e4/Rusted_Double_Bit_Hatchet_rdr2.jpg/revision/latest?cb=20181118101434"
       },
       {
-        "weapon": "Rusted Hunter Hatchet",
+        "name": "Rusted Hunter Hatchet",
         "id": 45,
         "description": "A rare Hatchet, with a long bearded axe bit that allows for greater control when planing or shaving wood. The melee weapon was found in a tree stump near Three Sisters in the Grizzlies, and has been worn by the elements over time. This Hatchet can also be thrown.",
         "damage": 2.3,
@@ -686,7 +686,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/f/fb/Rusted_Hunter_Hatchet_portrait_RDR2.jpg/revision/latest/scale-to-width-down/350?cb=20190130011723"
       },
       {
-        "weapon": "Stone Hatchet",
+        "name": "Stone Hatchet",
         "description": "The Stone Hatchet is a weapon featured in Red Dead Redemption 2. It cannot be customized.",
         "id": 46,
         "damage": 2.3,
@@ -694,7 +694,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/1/1c/StoneHatchetrdr2compendium.jpg/revision/latest?cb=20190609002153"
       },
       {
-        "weapon": "Viking Hatchet",
+        "name": "Viking Hatchet",
         "description": "As the name might suggest, the Viking Hatchet is similar to the regular hatchet: a basic hand axe, with a wedged steel blade and long wooden handle. It is designed for chopping wood, but owing to its robust build, this powerful one-handed weapon can not only be swung to deliver a large amount of damage to an opponent, but also thrown. The design is primitive, with rope and leather keeping the blade and wooden hilt together.",
         "id": 47,
         "damage": 2.3,
@@ -702,7 +702,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/3/38/Vikinghatchet.jpeg/revision/latest?cb=20181124192635"
       },
       {
-        "weapon": "Wide-Blade Knife",
+        "name": "Wide-Blade Knife",
         "description": "A rare hunting knife with a wide clip-point blade and worn curved wooden handle. This knife was found sticking out of the back of a corpse deep in the mines of Beryl's Dream, Big Valley. The previous owner of this weapon went to great lengths to prevent their crime from being discovered.",
         "id": 48,
         "damage": 2,
@@ -715,9 +715,9 @@ const WEAPONS_STATS = [
     "id": 500,
     "title": "Throwable",
     "weaponsType": "Throwable",
-    "items": [
+    "weapons": [
       {
-        "weapon": "Ancient Tomahawk",
+        "name": "Ancient Tomahawk",
         "description": "The Ancient Tomawhawk is a weapon featured in Red Dead Redemption 2 and Red Dead Online. It cannot be customized. This projectile can be found embedded in a target on the east side of Calumet Ravine, east of the Wapiti Indian Reservation. In Red Dead Online, the Ancient Tomahawk may be purchased at any Fence for $5.50.",
         "id": 49,
         "damage": 2.3,
@@ -725,7 +725,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/e/e9/Ancient_Tomahawk-RDRII.jpg/revision/latest?cb=20181028203237"
       },
       {
-        "weapon": "Dynamite",
+        "name": "Dynamite",
         "description": "A powerful explosive, designed for mining and construction purposes. It can be used to clear out groups of enemies, or effectively blow up a variety of things including mines, trains and safes. Light and throw towards your target, or place it down before igniting and running to a safe distance. It cannot be purchased from Gunsmith stores, but some less-than-reputable sellers may stock this item.",
         "id": 50,
         "damage": 3.6,
@@ -733,7 +733,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/e/ec/Dynamiterdr2.jpeg/revision/latest?cb=20181124195337"
       },
       {
-        "weapon": "Fire Bottle",
+        "name": "Fire Bottle",
         "description": "A glass bottle filled with flammable spirits, and topped with a cloth fuse. This explosive projectile will cause a large fireball on impact, useful for setting fire to stagecoaches or forcing people and animals to retreat. This weapon can be crafted by combining any type of alcoholic spirit with Animal Fat, or purchased from some less-than-reputable sellers.",
         "id": 51,
         "damage": 2.8,
@@ -741,7 +741,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/8/8b/Firebottlerdr2.jpeg/revision/latest?cb=20181124201420"
       },
       {
-        "weapon": "Throwing Knife",
+        "name": "Throwing Knife",
         "description": "A small knife with a straight blade, designed and balanced so it can be thrown with ease. Can be used to silently take down enemies at range, or used as a melee weapon if required. It can be purchased from some less-than-reputable sellers, or save a trip by recollecting the knife after throwing.",
         "id": 52,
         "damage": 2,
@@ -749,7 +749,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/8/8d/Throwingkniferdr2.jpeg/revision/latest/scale-to-width-down/350?cb=20181124200314"
       },
       {
-        "weapon": "Tomahawk",
+        "name": "Tomahawk",
         "description": "A basic tomahawk with a lightweight wooden shaft and thin blade. This strong and fast projectile weapon is deal for quick thrown attacks, or it can be used as a close-range melee weapon against enemies if needed. It can be purchased from some less-than-reputable sellers, or save a trip by recollecting the tomahawk after throwing.",
         "id": 53,
         "damage": 2.5,
@@ -762,9 +762,9 @@ const WEAPONS_STATS = [
     "id": 600,
     "title": "Equipment",
     "weaponsType": "Equipment",
-    "items": [
+    "weapons": [
       {
-        "weapon": "Bow",
+        "name": "Bow",
         "description": "When used by a skilled archer, the Bow can be a deadly and accurate weapon at range, with many types of arrows able to be crafted. Whether using Small Game Arrows to hunt squirrels or the Dynamite arrow to make a bold statement, the Bow has been the weapon of choice for generations. This weapon can use Regular, Improved, Small Game, Poison, Fire and Dynamite arrows.",
         "id": 54,
         "damage": 2.3,
@@ -773,7 +773,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/f/f5/RDR2_Weapon_BowAndArrows-2699-1080.jpg/revision/latest/scale-to-width-down/350?cb=20190129014711"
       },
       {
-        "weapon": "Hunting Knife",
+        "name": "Hunting Knife",
         "description": "An all-purpose Bowie knife with a sharp clip-point blade, steel crossguard, and sturdy wooden handle. Designed for combat, this weapon can give the edge to any close-quarters melee fight, or be used for silent takedowns. For hunters, this is also the perfect weapon for killing and skinning animals. Remember: there are no rules in a knife fight.",
         "id": 55,
         "damage": 2,
@@ -782,7 +782,7 @@ const WEAPONS_STATS = [
         "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/1/17/Huntingkniferdr2compendium.jpg/revision/latest?cb=20190608211912"
       },
       {
-        "weapon": "Lasso",
+        "name": "Lasso",
         "description": "The lasso is a loop of rope that is designed to be thrown around a target and tightened when pulled. It is used for catching and taming wild horses, for lassoing people and to hogtie criminals to take them to jail for a bounty reward. The player can also lasso criminals around the waist or feet and drag them while riding a horse. The player is unable to use the lasso while on a train.",
         "id": 56,
         "damage": 0.5,

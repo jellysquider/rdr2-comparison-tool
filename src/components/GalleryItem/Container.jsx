@@ -7,20 +7,20 @@ import ItemStats from './ItemStats.jsx';
 import '../../assets/styles/Card.sass';
 
 
-const GalleryItem = ({ weaponsType, weapon, description, imgURL, ...otherProps }) => {
+const GalleryItem = ({ name, description, imgURL, ...otherProps }) => {
 
   return (
     <Card className="card-item">
-      <Card.Image src={imgURL} alt={weapon} />
+      <Card.Image src={imgURL} alt={name} />
       <Card.Content>
         <Heading className="card-title" size={4}>
-          {weapon}
+          {name}
         </Heading>
         <Heading className="card-description" size={5}>
           {description}
         </Heading>
       </Card.Content>
-      <ItemStats weaponsType={weaponsType} { ...otherProps} />
+      <ItemStats { ...otherProps} />
     </Card>
   )
 }

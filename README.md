@@ -16,6 +16,16 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
 
 ### To-Do:
 - [x] Fix the alignment of card stats
-- [ ] Add search functionality
-- [ ] Add filter functionality
-- [ ] Add sort functionality
+- [x] Add search functionality
+- [ ] Refactor search to account for special characters (e.g. space, apostrophe, dash in weapons' names)
+- [ ] Add filter functionality (by weapon type)
+  - [ ] Firearms: Pistols and Revolvers, Rifles and Repeaters, Shotguns
+  - [ ] Melee
+  - [ ] Throwable
+  - [ ] Equipment
+- [ ] Add sort functionality by:
+  - [ ] Damage
+  - [ ] Range
+  - [ ] Firing Rate
+  - [ ] Accuracy
+  - [ ] Cost

@@ -1,41 +1,26 @@
-import React, { Component } from 'react';
-import WEAPONS_STATS from '../assets/data/weapons.stats';
+import React from 'react';
 
 import GalleryItem from './GalleryItem/Container';
 
 import { XMasonry, XBlock } from "react-xmasonry";
 
-class Gallery extends Component {
-  constructor(props) {
-    super(props);
+const Gallery = ({ weapons }) => {
   
-    this.state = {
-      galleryItems: WEAPONS_STATS
-    };
-
-  }
-
-  render() {
-
-    const { galleryItems } = this.state;
- 
-    return (
-      <div className="gallery-items" style={{ padding: "1.5rem" }}>
-         <XMasonry>
+  return (
+    <div className="gallery-items" style={{ padding: "1.5rem" }}>
+      <XMasonry>
         {
-          galleryItems.map(({ id, weaponsType, items }) => (
-            items.map(({ id, ...otherItemProps } )=> (
+          weapons.map(category => (
+            category.map(({id, ...otherWeaponProps}) => (
               <XBlock key={id}>
-                <GalleryItem id={id} weaponsType={weaponsType} {...otherItemProps} />
+                <GalleryItem {...otherWeaponProps} />
               </XBlock>
             ))
           ))
-              
         }
-        </XMasonry>
-      </div>
-    );
-  }
+      </XMasonry>
+    </div>
+  );
 }
 
 export default Gallery;
