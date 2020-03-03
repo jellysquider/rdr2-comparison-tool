@@ -16,7 +16,7 @@ function Gallery(props) {
             category.map((weapon) => (
               <XBlock
                 key={weapon.id}
-                onClick={() => { props.onItemClick(weapon)}}
+                onClick={() => props.onItemClick(weapon)}
               >
                 <GalleryItem {...weapon} />
               </XBlock>
