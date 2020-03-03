@@ -4,10 +4,21 @@ $lightGray: #d0d0d0
 $smokeBlack: #272727
 
 .card
+  margin: 7px
+  padding: 5px
   min-width: 200px
   background-color: $smokeBlack
   background-image: url('../images/card-background.png')
   background-size: cover
+
+  &:hover,
+  &:active,
+  &:focus,
+    box-shadow: 0 0 0 3px #bb2929
+
+.card-selected
+    box-shadow: 0 0 0 3px #bb2929
+
 
 .card-image
   figure
@@ -61,17 +72,6 @@ $smokeBlack: #272727
   animation: comeIn ease 0.5s
   animation-iteration-count: 1
   transition: left .3s ease, top .3s ease
-
-.card
-  margin: 7px
-  padding: 5px
-
-.card
-  &:hover,
-  &:active,
-  &:focus
-    box-shadow: 0 0 0 3px #bb2929
-
 
 .level-item
   // color: #d2d2d2

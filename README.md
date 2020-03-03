@@ -17,6 +17,7 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
 ### To-Do:
 - [x] Fix the alignment of card stats
 - [x] Add search functionality
+- [ ] Add tooltips when hovering over weapon stats icons
 - [ ] Refactor search to account for special characters (e.g. space, apostrophe, dash in weapons' names)
 - [ ] Add filter functionality (by weapon type)
   - [ ] Firearms: Pistols and Revolvers, Rifles and Repeaters, Shotguns
