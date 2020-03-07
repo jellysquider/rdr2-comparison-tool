@@ -1,5 +1,5 @@
 export const itemComparisonActionTypes = {
-  SET_ITEMS_TO_COMPARE: 'SET_ITEMS_TO_COMPARE'
+  UPDATE_ITEMS_TO_COMPARE: 'UPDATE_ITEMS_TO_COMPARE'
 }
 
 export const searchQueryActionTypes = {

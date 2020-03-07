@@ -4,11 +4,11 @@
 import { combineReducers } from 'redux';
 
 import { searchQueryReducer } from './searchQuery/sQReducer';
-import { setItemsToCompareReducer } from './itemComparison/iCReducer';
+import { updateItemsToCompareReducer } from './itemComparison/iCReducer';
 
 const rootReducer = combineReducers({
   searchQueryReducer,
-  setItemsToCompareReducer
+  updateItemsToCompareReducer
 });
 
 export default rootReducer;

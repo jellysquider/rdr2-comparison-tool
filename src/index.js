@@ -7,12 +7,12 @@ import App from './App';
 
 import store from './Redux/store';
 
-if (process.env.NODE_ENV === 'development') {
-  const whyDidYouRender = require('@welldone-software/why-did-you-render');
-  whyDidYouRender(React, {
-    trackAllPureComponents: true,
-  });
-}
+// if (process.env.NODE_ENV === 'development') {
+//   const whyDidYouRender = require('@welldone-software/why-did-you-render');
+//   whyDidYouRender(React, {
+//     trackAllPureComponents: true,
+//   });
+// }
 
 ReactDOM.render(
   <Provider store={store}>

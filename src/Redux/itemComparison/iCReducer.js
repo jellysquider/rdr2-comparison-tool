@@ -1,20 +1,32 @@
 import { itemComparisonActionTypes } from '../actionTypes';
-import { Set } from 'immutable';
 
 const INITIAL_STATE = {
-  itemsToCompare: new Set()
+  itemsToCompare: []
 }
 
-export const setItemsToCompareReducer = (state = INITIAL_STATE, action) => {
+export const updateItemsToCompareReducer = (state = INITIAL_STATE, action) => {
 
-  // console.log("arr", state.itemsToCompare)
-  // console.log("obj", action.payload)
   switch (action.type) {
-    case itemComparisonActionTypes.SET_ITEMS_TO_COMPARE:
-      return {
-        ...state,
-        itemsToCompare: state.itemsToCompare.add(action.payload)
+    case itemComparisonActionTypes.UPDATE_ITEMS_TO_COMPARE:
+      // includes returns a boolean
+      const copyOfItemsToCompare = state.itemsToCompare.slice()
+      
+      if (state.itemsToCompare.includes(action.payload)) {
+        copyOfItemsToCompare.splice(state.itemsToCompare.indexOf(action.payload), 1)
+        return {
+          ...state,
+          itemsToCompare: copyOfItemsToCompare
+        }
       }
+      else {
+        copyOfItemsToCompare.push(action.payload)
+        return {
+          ...state,
+          itemsToCompare: copyOfItemsToCompare
+        }
+        
+      }   
+      
     default:
       return state;
   }

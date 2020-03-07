@@ -4,23 +4,30 @@ import { XMasonry, XBlock } from "react-xmasonry";
 
 import GalleryItem from './GalleryItem/Container';
 
-import { setItemsToCompare } from '../Redux/itemComparison/iCActions';
+import { updateItemsToCompare } from '../Redux/itemComparison/iCActions';
 
 function Gallery(props) {
 
+  console.log("GALLERY", props.itemsToCompare)
+  
   return (
     <div className="gallery-items" style={{ padding: "1.5rem" }}>
+      {/* {props.searchResult.map(category => (
+        category.map((weapon) => (
+          <GalleryItem  key={weapon.id} weapon={weapon} />
+        ))
+      ))
+      } */}
+
       <XMasonry>
         {
-          props.searchResult.map(category => (
-            category.map((weapon) => (
-              <XBlock
-                key={weapon.id}
-                onClick={() => props.onItemClick(weapon)}
-              >
-                <GalleryItem {...weapon} />
-              </XBlock>
-            ))
+          props.searchResult.map(weapon => (
+            <XBlock
+              key={weapon.id}
+              onClick={() => props.onItemClick(weapon)}
+            >
+              <GalleryItem {...weapon} />
+            </XBlock>
           ))
         }
       </XMasonry>
@@ -32,7 +39,7 @@ function Gallery(props) {
 function mapStateToProps(state) {
   return {
     searchResult: state.searchQueryReducer.searchResult,
-    itemsToCompare: state.setItemsToCompareReducer.itemsToCompare
+    itemsToCompare: state.updateItemsToCompareReducer.itemsToCompare
   }
 }
 
@@ -40,7 +47,7 @@ function mapDispatchToProps(dispatch) {
   return {
     onItemClick: (weapon) => {
       let currItem = weapon
-      dispatch(setItemsToCompare(currItem))
+      dispatch(updateItemsToCompare(currItem))
     }
   }
 }

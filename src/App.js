@@ -1,44 +1,44 @@
 import React from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import Button from 'react-bulma-components/lib/components/button';
-import Container from 'react-bulma-components/lib/components/container';
-import Content from 'react-bulma-components/lib/components/content';
-import Heading from 'react-bulma-components/lib/components/heading';
-import Footer from 'components/Footer';
+import HomePage from './components/HomePage';
+import ItemComparisonPage from './components/ItemComparisonPage';
 
-import Gallery from './components/Gallery';
-import SearchBox from './components/SearchBox';
+import './assets/styles/App.sass';
 
+function App() {
 
-import './assets/styles/App.sass'
-
-function App(props) {
-  
-  {console.log("APP JS ", props.itemsToCompare) }
-
+  // url:
+  // compareWeapons=PR1RR3M1T4
   return (
     <div>
-      <Container>
-        <Heading>
-          RDR2
-        </Heading>
-        <SearchBox />
-        <Gallery />
-        {
-          props.itemsToCompare.size >= 2
-          && <Button fullwidth={true} inverted={true} className="compare-btn"> Compare selected weapons</Button>
-        }
-      </Container>
+      {/* Switch will render only one component that got matched */}
+      <Switch>
+          {/* exact is the bool that matches the path exactly 
+              without exact every single forward-slash would be matched
+          */}
+        <Route exact path="/" component={HomePage} />
+        <Route
+          path="/compareWeapons/:items"
+          component={ItemComparisonPage}
+        />
+          {/* // component={() => <ItemComparisonPage itemsToCompare={props.itemsToCompare} />} /> */}
+        
+          {/* <Route
+            exact path="/compareWeapons"
+            render={() =>
+              props.itemsToCompare
+                ? (<Redirect to="/" />)
+                : (<ItemComparisonPage />)
+            }
+          /> */}
+        </Switch>
+
       
     </div>
   );
 }
 
-function mapStateToProps(state) {
-  return {
-    itemsToCompare: state.setItemsToCompareReducer.itemsToCompare
-  }
-}
 
-export default connect(mapStateToProps)(App);
+export default App;
