@@ -15,22 +15,41 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
 * Run `npm start` inside of the root folder and head over to `localhost:3000`
 
 ### To-Do:
+
+#### UI, UX, and styles
 - [x] Fix the alignment of card stats
-- [x] Add search functionality
-- [x] Render the table component when user click on the "Compare weapons" button
+- [x] Render the table component with correct URL when user click on the "Compare weapons" button
 - [x] Ensure the call-to-action button appears only when 2 or more weapons are selected
-- [x] Parse params passed in the URL so that the link can be shared by copying and preserve which weapons were compared
+- [ ] Change the default look of the scrollbar to be more like RDR2 (maybe by using something like [this](https://github.com/malte-wessel/react-custom-scrollbars))
 - [ ] Add tooltips when hovering over weapon stats icons
+- [ ] Preserve which items were selected when rendering search results
+
+
+
+
+
+#### Search
+- [x] Add search functionality
 - [ ] Refactor search to account for special characters (e.g. space, apostrophe, dash in weapons' names)
-- [ ] Add filter functionality (by weapon type)
-  - [ ] Firearms: Pistols and Revolvers, Rifles and Repeaters, Shotguns
+
+
+#### Filter
+- [ ] Add filter functionality (by weapon type) 
+  - [ ] Firearms: Pistols, Revolvers, Rifles, Repeaters, and Shotguns
   - [ ] Melee
   - [ ] Throwable
   - [ ] Equipment
-- [ ] Add sort functionality by:
-  - [ ] Damage
-  - [ ] Range
-  - [ ] Firing Rate
-  - [ ] Accuracy
-  - [ ] Cost
-- [ ] Change the default look of the scrollbar to be more like RDR2 (maybe by using something like [this](https://github.com/malte-wessel/react-custom-scrollbars))
+- [ ] Add keys in boxes `[Q]` and `[E]` like in RDR2 UI with filter applied in between
+
+
+#### Table Comparison
+- [x] Parse params passed in the URL so that the link can be shared by copying and preserve which weapons were compared
+- [x] Add sort functionality by:
+  - [x] Damage
+  - [x] Range
+  - [x] Firing Rate
+  - [x] Accuracy
+  - [x] Cost
+- [ ] Improve functionality by enabling sorting by multiple attributes
+- [ ] Add top of the category items below the table compontn to showcase which items (among selected) are the best in each category
+- [ ] Put top of the caategory between the `[Q]` and `[E]` box keys as well
