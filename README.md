@@ -22,10 +22,8 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
 - [x] Ensure the call-to-action button appears only when 2 or more weapons are selected
 - [ ] Change the default look of the scrollbar to be more like RDR2 (maybe by using something like [this](https://github.com/malte-wessel/react-custom-scrollbars))
 - [ ] Add tooltips when hovering over weapon stats icons
-- [ ] Preserve which items were selected when rendering search results
-
-
-
+- [ ] Preserve which items were selected when rendering search results (keep red card outline)
+- [ ] Preserve which table colums were selected for sorting (keep red font color)
 
 
 #### Search
