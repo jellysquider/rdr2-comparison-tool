@@ -29,6 +29,7 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
 #### Search
 - [x] Add search functionality
 - [ ] Refactor search to account for special characters (e.g. space, apostrophe, dash in weapons' names)
+- [ ] Update search reducer to return new searchResults and searchQuery objects
 
 
 #### Filter
@@ -50,4 +51,4 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
   - [x] Cost
 - [ ] Improve functionality by enabling sorting by multiple attributes
 - [ ] Add top of the category items below the table compontn to showcase which items (among selected) are the best in each category
-- [ ] Put top of the caategory between the `[Q]` and `[E]` box keys as well
+- [ ] Put top of the category between the `[Q]` and `[E]` box keys as well
