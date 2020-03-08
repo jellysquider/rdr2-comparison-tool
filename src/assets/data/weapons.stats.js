@@ -14,7 +14,7 @@ const WEAPONS_STATS = [
     "reloadingSpeed": 2.8,
     "improvedReloadingSpeed": null,
     "ammoCapacity": 6,
-    "cost": null,
+    "cost": 0,
     "model": null,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/c/c9/RDR2_Weapon_DoubleActionRevolverAlgernon.jpg/revision/latest/scale-to-width-down/350?cb=20190125012428"
   },
@@ -33,7 +33,7 @@ const WEAPONS_STATS = [
     "reloadingSpeed": 2.5,
     "improvedReloadingSpeed": null,
     "ammoCapacity": 6,
-    "cost": null,
+    "cost": 0,
     "model": null,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/f/ff/Calloway%E2%80%99s_revolver_compendium.jpeg/revision/latest?cb=20190126123731"
   },
@@ -90,7 +90,7 @@ const WEAPONS_STATS = [
     "reloadingSpeed": 2.7,
     "improvedReloadingSpeed": null,
     "ammoCapacity": 6,
-    "cost": null,
+    "cost": 0,
     "model": null,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/2/2e/Flacosrevolver.jpeg/revision/latest/scale-to-width-down/350?cb=20181124212237"
   },
@@ -109,7 +109,7 @@ const WEAPONS_STATS = [
     "reloadingSpeed": 2.7,
     "improvedReloadingSpeed": null,
     "ammoCapacity": 6,
-    "cost": null,
+    "cost": 0,
     "model": null,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/2/2c/Grangergun.png/revision/latest?cb=20181123192847"
   },
@@ -128,7 +128,7 @@ const WEAPONS_STATS = [
     "reloadingSpeed": 2.7,
     "improvedReloadingSpeed": null,
     "ammoCapacity": 6,
-    "cost": null,
+    "cost": 0,
     "model": "Colt model 1873 Single Action Army Revolver",
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/0/00/Johnscattlemanrdr2.jpeg/revision/latest/scale-to-width-down/350?cb=20181124212014"
   },
@@ -147,7 +147,7 @@ const WEAPONS_STATS = [
     "reloadingSpeed": 2.8,
     "improvedReloadingSpeed": null,
     "ammoCapacity": 6,
-    "cost": null,
+    "cost": 0,
     "model": null,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/7/70/Micahs-revolver.jpg/revision/latest/scale-to-width-down/350?cb=20181120230620"
   },
@@ -166,7 +166,7 @@ const WEAPONS_STATS = [
     "reloadingSpeed": 2.5,
     "improvedReloadingSpeed": "3",
     "ammoCapacity": 6,
-    "cost": null,
+    "cost": 0,
     "model": null,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/d/d3/Otismillerrevolver.jpg/revision/latest/scale-to-width-down/350?cb=20181123193521"
   },
@@ -242,7 +242,7 @@ const WEAPONS_STATS = [
     "reloadingSpeed": 3,
     "improvedReloadingSpeed": "3.4",
     "ammoCapacity": 10,
-    "cost": null,
+    "cost": 0,
     "model": "Mauser C96 Pistol",
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/c/cb/Midnightspistol.jpeg/revision/latest/scale-to-width-down/350?cb=20181124204930"
   },
@@ -337,7 +337,7 @@ const WEAPONS_STATS = [
     "reloadingSpeed": 1.9,
     "improvedReloadingSpeed": null,
     "ammoCapacity": 1,
-    "cost": null,
+    "cost": 0,
     "model": "Remington Rolling Block Rifle",
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/e/e9/Rare_Rolling_Block_Rifle_rdr2.png/revision/latest/scale-to-width-down/350?cb=20181112234442"
   },

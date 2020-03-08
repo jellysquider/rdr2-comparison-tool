@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Card from 'react-bulma-components/lib/components/card';
 import Heading from 'react-bulma-components/lib/components/heading';
 
-import ItemStats from './ItemStats.jsx';
+import GalleryItemStats from './GalleryItemStats';
 
 import '../../assets/styles/Card.sass';
 
@@ -60,7 +60,7 @@ class GalleryItem extends React.Component {
             {description}
           </Heading>
         </Card.Content>
-        <ItemStats {...otherProps} />
+        <GalleryItemStats {...otherProps} />
       </Card>
     )
   }

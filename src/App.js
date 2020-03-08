@@ -1,44 +1,25 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { Switch, Route} from 'react-router-dom';
 
-import HomePage from './components/HomePage';
-import ItemComparisonPage from './components/ItemComparisonPage';
+import DisplayItemsPage from './components/pages/DisplayItemsPage';
+import CompareItemsPage from './components/pages/CompareItemsPage';
 
 import './assets/styles/App.sass';
 
-function App() {
+function App(props) {
 
-  // url:
-  // compareWeapons=PR1RR3M1T4
   return (
     <div>
       {/* Switch will render only one component that got matched */}
       <Switch>
-          {/* exact is the bool that matches the path exactly 
-              without exact every single forward-slash would be matched
-          */}
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={DisplayItemsPage} />
         <Route
           path="/compareWeapons/:items"
-          component={ItemComparisonPage}
+          component={CompareItemsPage}
         />
-          {/* // component={() => <ItemComparisonPage itemsToCompare={props.itemsToCompare} />} /> */}
-        
-          {/* <Route
-            exact path="/compareWeapons"
-            render={() =>
-              props.itemsToCompare
-                ? (<Redirect to="/" />)
-                : (<ItemComparisonPage />)
-            }
-          /> */}
-        </Switch>
-
-      
+      </Switch>
     </div>
   );
 }
-
 
 export default App;

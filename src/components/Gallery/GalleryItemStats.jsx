@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Level from 'react-bulma-components/lib/components/level';
 
-import StatDisplay from './StatDisplay'
+import DisplayItemStats from '../DisplayItemStats';
 
-function ItemStats({ weaponsType, ...items }) {
+function GalleryItemStats({ weaponsType, ...items }) {
+  
   return (
     <Level className="card-footer">
       {
@@ -13,7 +14,7 @@ function ItemStats({ weaponsType, ...items }) {
           && (item[1] != null)) {
             return (
               <Level.Side key={index} align="left">
-                <StatDisplay statName={item[0]} statValue={item[1]} />
+                <DisplayItemStats statType={"Gallery"} statName={item[0]} statValue={item[1]} />
               </Level.Side>
             )
           }
@@ -21,7 +22,7 @@ function ItemStats({ weaponsType, ...items }) {
           && (item[1] != null)) {
             return (
               <Level.Side key={index} align="right">
-                <StatDisplay statName={item[0]} statValue={item[1]} />
+                <DisplayItemStats statType={"Gallery"} statName={item[0]} statValue={item[1]} />
               </Level.Side>
             )
           }
@@ -32,4 +33,4 @@ function ItemStats({ weaponsType, ...items }) {
   )
 }
 
-export default ItemStats;
+export default GalleryItemStats;

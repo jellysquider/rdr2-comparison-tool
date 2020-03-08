@@ -1,0 +1,29 @@
+table
+  border-spacing: 0px
+
+th
+  border-bottom: 2px solid #282828
+  padding: 10px
+  text-align: center
+
+  &:hover,
+  &:active,
+  &:focus
+    cursor: pointer
+    // box-shadow: 0 0 0 3px #bb2929
+    color: #bb2929
+
+  &::after
+    content: '\23f7'
+    padding-left: 5px
+    // \23f6
+
+
+.table-image-header
+  &::after
+    content: none !important
+
+td
+  border-bottom: 2px solid #282828
+  padding: 10px
+  text-align: center

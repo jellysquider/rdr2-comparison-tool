@@ -10,9 +10,9 @@ import {
   Input
 } from 'react-bulma-components/lib/components/form';
 
-import '../assets/styles/SearchBox.sass'
+import '../assets/styles/SearchBox.sass';
 
-import { getSearchResult } from '../Redux/searchQuery/sQActions'
+import { getSearchResult } from '../Redux/searchQuery/sQActions';
 
 function SearchBox(props) {
 
@@ -41,6 +41,7 @@ function mapStateToProps(state) {
   }
 }
 
+// dispatch action to update searchQuery while the user is typing
 function mapDispatchToProps(dispatch) {
   return {
     onSearchQueryChange: (event) => {
