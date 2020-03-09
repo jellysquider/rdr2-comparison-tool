@@ -19,19 +19,16 @@ class GalleryItem extends React.Component {
     }
   }
 
-  // componentDidMount() {
-  //   // make sure previously selected items stay selected
-  //   if (this.props.itemsToCompare.includes(this.props.weapon)) {
-  //     this.setState(state => ({
-  //       isSelected: true
-  //     }))
-  //   }
-  //   else {
-  //     this.setState(state => ({
-  //       isSelected: false
-  //     }))
-  //   }
-  // }
+  componentDidMount() {
+    // make sure previously selected items stay selected
+    if (this.props.itemsToCompare.includes(this.props.weapon)) {
+      console.log("arr includes this item", this.props.weapon)
+      this.setState({
+        isSelected: true
+      })
+    }
+  }
+
 
   toggleSelected = () => {
     this.setState(state => ({
@@ -44,11 +41,11 @@ class GalleryItem extends React.Component {
 
     // console.log(this.props.itemsToCompare)
 
-    const { name, description, imgURL, ...otherProps } = this.props;
+    const { name, description, imgURL, ...otherProps } = this.props.weapon;
 
     return (
       <Card
-        className={this.state.isSelected ? 'card-selected' : null}
+        className={this.state.isSelected ? 'card-gallery card-selected' : 'card-gallery'}
         onClick={this.toggleSelected}
       >
         <Card.Image src={imgURL} alt={name} />

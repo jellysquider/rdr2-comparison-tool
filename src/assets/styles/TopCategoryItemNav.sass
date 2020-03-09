@@ -1,0 +1,60 @@
+@font-face
+  font-family: "Cuprum-Bold"
+  src: url("../fonts/Cuprum-Bold.ttf")
+  
+
+
+.level
+  padding-top: 10px
+
+  &.category-nav
+    justify-content: center
+    margin-bottom: 0
+
+.level-item
+  &.nav-button
+    flex-grow: 0
+
+    button
+      font-size: 25px
+      font-family: "Cuprum-Bold"
+      font-weight: bold
+      padding: 2px 10px
+    
+  &.category-name
+    flex-grow: 0
+    padding: 12px 15px 0
+
+  &.category-circle
+    flex-grow: 0
+    padding: 0 5px
+    color: #4a4a4a
+
+    &.circle-active 
+      color: white
+
+.nav-wrapper
+  padding: 60px 0
+
+  .card
+    margin: 30px auto
+    max-width: 350px
+
+    .card-selected
+    &:hover,
+    &:active,
+    &:focus
+      box-shadow: none
+      cursor: default
+  
+  
+    box-shadow: none
+
+
+
+@media screen and (max-width: 768px)
+  .level
+    display: flex
+
+  .level-item:not(:last-child)
+    margin-bottom: 0

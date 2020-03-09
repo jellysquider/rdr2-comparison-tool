@@ -5,7 +5,6 @@ import Level from 'react-bulma-components/lib/components/level';
 import DisplayItemStats from '../DisplayItemStats';
 
 function GalleryItemStats({ weaponsType, ...items }) {
-  
   return (
     <Level className="card-footer">
       {

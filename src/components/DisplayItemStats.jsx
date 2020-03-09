@@ -67,7 +67,7 @@ const StatDisplay = ({ statType, statName, statValue }) => {
                 <FontAwesomeIcon icon={iconType} size="lg" />
               </Icon>
           }
-          {statName}
+          {statName.toLowerCase()}
         </React.Fragment>
       )
     case "Table Data":

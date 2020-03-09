@@ -18,7 +18,7 @@ export const searchQueryReducer = (state = INITIAL_STATE, action) => {
           weapon.name.toLowerCase().replace(/-|'/g, '').includes(action.payload.replace(/-|'/g, '').toLowerCase())
         ))
       }
-      
+    
     default:
       return state;
   }

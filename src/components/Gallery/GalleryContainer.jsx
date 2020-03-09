@@ -19,7 +19,7 @@ function GalleryContainer(props) {
               onClick={() => props.onItemClick(weapon)}
             >
               {/* Item card that lists weapon properties */}
-              <GalleryItem {...weapon} />
+              <GalleryItem weapon={weapon} />
             </XBlock>
           ))
         }

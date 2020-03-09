@@ -59,7 +59,10 @@ class ComparisonTable extends Component {
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
   }
-  
+
+  // componentWillUnmount() {
+  //   window.removeEventListener('resize', this.updateWindowDimensions);
+  // }
 
   updateWindowDimensions = () => {
     if (window.innerWidth < 900) {
@@ -116,7 +119,7 @@ class ComparisonTable extends Component {
         // reset to default configuration sorted by ascending name
         defaultConfig = true
         copyActiveStats['name'].isSelected = true
-        copyActiveStats['name'].isSelected = true
+        copyActiveStats['name'].isAscending = true
 
         this.setState((prevState) => {
           return {
@@ -127,7 +130,7 @@ class ComparisonTable extends Component {
       }
     }
 
-    Object.keys(copyActiveStats).map(currStat => {
+    Object.keys(copyActiveStats).forEach(currStat => {
       if (!defaultConfig && currStat !== itemStat) {
         copyActiveStats[currStat].isSelected = false
         copyActiveStats[currStat].isAscending = false

@@ -15,7 +15,7 @@ function CompareItemsPage({ match }) {
 
   // if provided link has more than 2 parameters
   // e.g. 'r1-r2' length is 5
-  if (match.params.items.length > 4) {
+  if (match.params.items && match.params.items.length > 4) {
     const parsedUrlItems = match.params.items.split(/[-]/g)
 
     var compareItemsData = []
@@ -40,10 +40,8 @@ function CompareItemsPage({ match }) {
         <Container>
           <Header header="Compare Items" />
           <ComparisonTable compareItemsData={compareItemsData} />
-          <Header header="Top of category" />
-          <DisplayTopCategoryItem />
+          <DisplayTopCategoryItem compareItemsData={compareItemsData} />
         </Container>
-        
       </div>
     )
   }
