@@ -74,9 +74,12 @@ const StatDisplay = ({ statType, statName, statValue }) => {
       return (
         <React.Fragment>
           {
+            // if statValue is a number, then parse it as float
+            // if it's null then display 0 in the table
+            // otherwise display it as is
             typeof { statValue } == "number"
             ? (parseFloat(`${statValue}`).toFixed(1))
-            : statValue
+            : (statValue == null) ? 0 : statValue
           }
         </React.Fragment>
       )

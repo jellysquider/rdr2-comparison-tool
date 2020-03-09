@@ -576,6 +576,7 @@ const WEAPONS_STATS = [
     "id": 31,
     "damage": 2,
     "range": 0.5,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/5/5f/Antler_Knife_RDRII.jpg/revision/latest/scale-to-width-down/350?cb=20181029013610"
   },
   {
@@ -585,6 +586,7 @@ const WEAPONS_STATS = [
     "id": 32,
     "damage": 2.1,
     "range": 0.5,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/b/b9/Broken_Pirate_Sword_RDRII.jpg/revision/latest?cb=20181029190123"
   },
   {
@@ -594,6 +596,7 @@ const WEAPONS_STATS = [
     "id": 33,
     "damage": 2,
     "range": 0.5,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/1/1a/Civil_War_Knife_Red_Dead_Redemption_II.jpg/revision/latest/scale-to-width-down/350?cb=20181029023908"
   },
   {
@@ -601,8 +604,9 @@ const WEAPONS_STATS = [
     "description": "A wide-bladed axe with a short ridged wooden handle, this hunting and cooking tool is usually used to prepare animal carcasses and chop through thick meat, cartilage and bone. As you can imagine, these properties also make for an effective combat weapon, and it can also be thrown.",
     "type": "M",
     "id": 34,
-    "damage": null,
+    "damage": 2.0,
     "range": 0.5,
+    "cost": 8,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/6/60/Cleaverrdr2.jpeg/revision/latest?cb=20181124195917"
   },
   {
@@ -612,6 +616,7 @@ const WEAPONS_STATS = [
     "id": 35,
     "damage": 2.3,
     "range": 1,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/f/f5/Double_Bit_Hatchet_RDRII.jpg/revision/latest/scale-to-width-down/350?cb=20181029002559"
   },
   {
@@ -621,6 +626,7 @@ const WEAPONS_STATS = [
     "id": 36,
     "damage": 1.3,
     "range": 0.5,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/e/ef/RD2_Fists_Symbol.png/revision/latest/scale-to-width-down/350?cb=20191113013743"
   },
   {
@@ -630,6 +636,7 @@ const WEAPONS_STATS = [
     "id": 37,
     "damage": 2.3,
     "range": 1,
+    "cost": 4.25,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/d/da/Hatchetrdr2.jpeg/revision/latest?cb=20181124192952"
   },
   {
@@ -639,6 +646,7 @@ const WEAPONS_STATS = [
     "id": 38,
     "damage": 2.3,
     "range": 1,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/4/42/HewingHatchetrdr2compendium.jpg/revision/latest?cb=20190608210122"
   },
   {
@@ -648,6 +656,7 @@ const WEAPONS_STATS = [
     "id": 39,
     "damage": 2.3,
     "range": 1,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/1/1c/Hunter_Hatchet-Red_Dead_Redemption_II.png/revision/latest?cb=20181028184749"
   },
   {
@@ -657,15 +666,17 @@ const WEAPONS_STATS = [
     "id": 40,
     "damage": 2,
     "range": 0.5,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/4/4b/Jawbone_Knife.png/revision/latest/scale-to-width-down/1000?cb=20190529013945"
   },
   {
-    "name": "John'sKnife",
+    "name": "John's Knife",
     "description": "Owned by John Marston, this sturdy hunting knife combines a deadly clip-point blade with a narrow wooden handle. It is slightly smaller than the default Hunting Knife, although it performs just the same. Along with his revolver, John can be seen with this weapon in 1899 during his time in the gang.",
     "type": "M",
     "id": 41,
     "damage": 2,
     "range": 0.5,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/e/e8/Johnsknife.jpeg/revision/latest/scale-to-width-down/350?cb=20181124193509"
   },
   {
@@ -673,8 +684,9 @@ const WEAPONS_STATS = [
     "description": "With a sharp broad blade, the Machete is designed for harvesting sugar cane, or clearing through forest undergrowth. However, this doesn't stop it from being an effective melee weapon with a longer range than most. One strong hack with this weapon will take any target down quickly and quietly.",
     "type": "M",
     "id": 42,
-    "damage": null,
+    "damage": 2.3,
     "range": 0.5,
+    "cost": 10,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/9/9f/Macheterdr2.jpeg/revision/latest?cb=20181124194332"
   },
   {
@@ -684,6 +696,7 @@ const WEAPONS_STATS = [
     "id": 43,
     "damage": 2,
     "range": 0.5,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/7/7d/Ornate_Dagger_RDR2.jpg/revision/latest/scale-to-width-down/350?cb=20181109031654"
   },
   {
@@ -693,6 +706,7 @@ const WEAPONS_STATS = [
     "id": 44,
     "damage": 2.3,
     "range": 1,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/e/e4/Rusted_Double_Bit_Hatchet_rdr2.jpg/revision/latest?cb=20181118101434"
   },
   {
@@ -702,6 +716,7 @@ const WEAPONS_STATS = [
     "description": "A rare Hatchet, with a long bearded axe bit that allows for greater control when planing or shaving wood. The melee weapon was found in a tree stump near Three Sisters in the Grizzlies, and has been worn by the elements over time. This Hatchet can also be thrown.",
     "damage": 2.3,
     "range": 1,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/f/fb/Rusted_Hunter_Hatchet_portrait_RDR2.jpg/revision/latest/scale-to-width-down/350?cb=20190130011723"
   },
   {
@@ -711,6 +726,7 @@ const WEAPONS_STATS = [
     "id": 46,
     "damage": 2.3,
     "range": 1,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/1/1c/StoneHatchetrdr2compendium.jpg/revision/latest?cb=20190609002153"
   },
   {
@@ -720,6 +736,7 @@ const WEAPONS_STATS = [
     "id": 47,
     "damage": 2.3,
     "range": 1,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/3/38/Vikinghatchet.jpeg/revision/latest?cb=20181124192635"
   },
   {
@@ -729,6 +746,7 @@ const WEAPONS_STATS = [
     "id": 48,
     "damage": 2,
     "range": 0.5,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/f/f2/Widebladeknife.jpeg/revision/latest?cb=20181124191716"
   },
   {
@@ -738,6 +756,7 @@ const WEAPONS_STATS = [
     "id": 49,
     "damage": 2.3,
     "range": 1,
+    "cost": 5.50,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/e/e9/Ancient_Tomahawk-RDRII.jpg/revision/latest?cb=20181028203237"
   },
   {
@@ -747,6 +766,7 @@ const WEAPONS_STATS = [
     "id": 50,
     "damage": 3.6,
     "range": 1,
+    "cost": 1,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/e/ec/Dynamiterdr2.jpeg/revision/latest?cb=20181124195337"
   },
   {
@@ -756,6 +776,7 @@ const WEAPONS_STATS = [
     "id": 51,
     "damage": 2.8,
     "range": 1,
+    "cost": 0.75,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/8/8b/Firebottlerdr2.jpeg/revision/latest?cb=20181124201420"
   },
   {
@@ -765,6 +786,7 @@ const WEAPONS_STATS = [
     "id": 52,
     "damage": 2,
     "range": 1,
+    "cost": 2.50,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/8/8d/Throwingkniferdr2.jpeg/revision/latest/scale-to-width-down/350?cb=20181124200314"
   },
   {
@@ -774,6 +796,7 @@ const WEAPONS_STATS = [
     "id": 53,
     "damage": 2.5,
     "range": 1,
+    "cost": 4,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/1/1a/Tomahawkrdr2.jpeg/revision/latest/scale-to-width-down/350?cb=20181124194732"
   },
   {
@@ -783,7 +806,8 @@ const WEAPONS_STATS = [
     "id": 54,
     "damage": 2.3,
     "range": 1.7,
-    "firingRate": "1.2",
+    "firingRate": 1.2,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/f/f5/RDR2_Weapon_BowAndArrows-2699-1080.jpg/revision/latest/scale-to-width-down/350?cb=20190129014711"
   },
   {
@@ -794,6 +818,7 @@ const WEAPONS_STATS = [
     "damage": 2,
     "range": 2.5,
     "firingRate": null,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/1/17/Huntingkniferdr2compendium.jpg/revision/latest?cb=20190608211912"
   },
   {
@@ -804,6 +829,7 @@ const WEAPONS_STATS = [
     "damage": 0.5,
     "range": 0.8,
     "firingRate": null,
+    "cost": 0,
     "imgURL": "https://vignette.wikia.nocookie.net/reddeadredemption/images/0/0c/RDR2_Lasso_Symbol.png/revision/latest/scale-to-width-down/350?cb=20191114224515"
   }
 ]

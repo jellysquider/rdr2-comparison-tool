@@ -10,8 +10,6 @@ class ComparisonTable extends Component {
   
   constructor(props) {
     super(props);
-    
-    // console.log(this.props.compareItemsData)
 
     this.state = {
       // intialize an array with 5 empty strings,
@@ -78,9 +76,10 @@ class ComparisonTable extends Component {
 
   handleClickSortBy = (itemStat) => {
 
-    const activeStatsHeaders = this.state.activeStatsHeaders
+    const activeStatsHeaders = this.state.activeStatsHeaders;
 
-    let copyActiveStats = Object.assign({}, activeStatsHeaders)
+    let defaultConfig = false;
+    let copyActiveStats = Object.assign({}, activeStatsHeaders);
 
     // if the stat is not selected, set it to be selected and ascending
     if (!activeStatsHeaders[itemStat].isSelected) {
@@ -113,11 +112,23 @@ class ComparisonTable extends Component {
       // if the stat is selected and descending, set it to be not selected anymore since it was user's third click
       else {
         copyActiveStats[itemStat].isSelected = false
+        
+        // reset to default configuration sorted by ascending name
+        defaultConfig = true
+        copyActiveStats['name'].isSelected = true
+        copyActiveStats['name'].isSelected = true
+
+        this.setState((prevState) => {
+          return {
+            activeStatsHeaders: copyActiveStats,
+            compareItemsData: prevState.compareItemsData.sort((a, b) => (a['name'] > b['name']) ? 1 : -1)
+          }
+        })
       }
     }
 
     Object.keys(copyActiveStats).map(currStat => {
-      if (currStat !== itemStat) {
+      if (!defaultConfig && currStat !== itemStat) {
         copyActiveStats[currStat].isSelected = false
         copyActiveStats[currStat].isAscending = false
       }
