@@ -8,6 +8,7 @@ import Heading from 'react-bulma-components/lib/components/heading';
 import GalleryContainer from '../Gallery/GalleryContainer';
 import SearchBar from '../SearchBar';
 import CompareButton from '../CompareButton';
+import Header from '../Header';
 
 function DisplayItemsPage(props) {
 
@@ -18,9 +19,8 @@ function DisplayItemsPage(props) {
 
   return (
     <Container>
-      <Heading >
-        RDR2
-      </Heading>
+      <Header header="RDR2 Weapons" />
+      <Heading subtitle size={4} style={{ textAlign: 'center' }}>select at least 2 weapons to compare them</Heading>
       <SearchBar />
       <GalleryContainer />
       {

@@ -21,8 +21,8 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
 - [x] Render the table component with correct URL when user click on the "Compare weapons" button
 - [x] Ensure the call-to-action button appears only when 2 or more weapons are selected
 - [ ] Change the default look of the scrollbar to be more like RDR2 (maybe by using something like [this](https://github.com/malte-wessel/react-custom-scrollbars))
-- [ ] Add tooltips when hovering over weapon stats icons (although the game almost never explained what each icons meant so that might be a part of the UX to figure it out on your own)
-- [ ] Preserve which items were selected when rendering search results (keep red card outline)
+- [ ] <s>Add tooltips when hovering over weapon stats icons</s>(although the game almost never explained what each icon meant so that might be a part of the UX to figure it out on your own)
+- [x] Preserve which items were selected when rendering search results (keep red card outline)
 - [x] Preserve which table colums were selected for sorting (keep red font color)
 - [x] Display caret-up or -down depending on how items were sorted
 
@@ -48,6 +48,9 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
   - [x] Firing Rate
   - [x] Accuracy
   - [x] Cost
+- [x] Add top of the category items below the table compontn to showcase which items (among selected) are the best in each category
+- [x] Put top of the category between the `[Q]` and `[E]` box keys as well
+
+#### Long-term 
 - [ ] Improve functionality by enabling sorting by multiple attributes
-- [ ] Add top of the category items below the table compontn to showcase which items (among selected) are the best in each category
-- [ ] Put top of the category between the `[Q]` and `[E]` box keys as well
+- [ ] Let users to create their own inventory and then compare items directly with their inventory (also keep their weapons in yellow color like the game does for <s>supreme</s> potions)

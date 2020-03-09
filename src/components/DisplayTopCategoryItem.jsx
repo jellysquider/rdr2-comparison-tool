@@ -134,7 +134,7 @@ class DisplayTopCategoryItem extends Component {
             </Level.Item>
         </Level>
 
-        <Level className="category-nav">
+        <Level className="category-nav-circles">
           {
             // iterate over categories object
             Object.keys(categories).map((category, index) => 

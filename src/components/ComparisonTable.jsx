@@ -60,9 +60,9 @@ class ComparisonTable extends Component {
     window.addEventListener('resize', this.updateWindowDimensions);
   }
 
-  // componentWillUnmount() {
-  //   window.removeEventListener('resize', this.updateWindowDimensions);
-  // }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
 
   updateWindowDimensions = () => {
     if (window.innerWidth < 900) {
