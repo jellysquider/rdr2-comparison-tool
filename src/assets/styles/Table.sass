@@ -5,6 +5,7 @@ th
   border-bottom: 2px solid #282828
   padding: 10px
   text-align: center
+  
 
   &:hover,
   &:active,
@@ -16,14 +17,27 @@ th
   &::after
     content: '\23f7'
     padding-left: 5px
-    // \23f6
-
-
-.table-image-header
-  &::after
-    content: none !important
 
 td
   border-bottom: 2px solid #282828
   padding: 10px
   text-align: center
+
+.stat-active
+  color: #bb2929
+  
+  &.descending
+    &::after
+      content: '\23f7'
+      padding-left: 5px
+
+  &.ascending
+    &::after
+      content: '\23f6'
+      padding-left: 5px
+
+.table-image-header
+  &::after
+    content: none !important
+
+

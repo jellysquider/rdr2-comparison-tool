@@ -6,7 +6,7 @@ import CompareItemsPage from './components/pages/CompareItemsPage';
 
 import './assets/styles/App.sass';
 
-function App(props) {
+function App() {
 
   return (
     <div>
@@ -14,7 +14,7 @@ function App(props) {
       <Switch>
         <Route exact path="/" component={DisplayItemsPage} />
         <Route
-          path="/compareWeapons/:items"
+          path="/compareWeapons/:items?"
           component={CompareItemsPage}
         />
       </Switch>

@@ -14,26 +14,51 @@ class ComparisonTable extends Component {
     // console.log(this.props.compareItemsData)
 
     this.state = {
-      mobileSize: false,
-      compareItemsData: this.props.compareItemsData.slice(),
+      // intialize an array with 5 empty strings,
+      activeStatsHeaders: {
+        "name": {
+          "isSelected": true,
+          "isAscending": true,
+        },
+        "damage": {
+          "isSelected": false,
+          "isAscending": false,
+        },
+        "firing Rate": {
+          "isSelected": false,
+          "isAscending": false,
+        },
+        "range": {
+          "isSelected": false,
+          "isAscending": false,
+        },
+        "accuracy": {
+          "isSelected": false,
+          "isAscending": false,
+        },
+        "reloading Speed": {
+          "isSelected": false,
+          "isAscending": false,
+        },
+        "ammo Capacity": {
+          "isSelected": false,
+          "isAscending": false,
+        },
+        "cost": {
+          "isSelected": false,
+          "isAscending": false,
+        }
+      },
+      compareItemsData: this.props.compareItemsData.sort((a, b) => (a["name"] > b["name"]) ? 1 : -1),
       itemOrderAscending: true,
-      tableHeaders: [
-        "name",
-        "damage",
-        "range",
-        "firing Rate",
-        "accuracy",
-        "reloading Speed",
-        "ammo Capacity",
-        "cost"
-      ]
+      mobileSize: false,
+      statsToSort: new Set()
     }
 
   }
 
   componentDidMount() {
     this.updateWindowDimensions();
-    // this.sortBy("firingRate", "descending");
     window.addEventListener('resize', this.updateWindowDimensions);
   }
   
@@ -51,50 +76,84 @@ class ComparisonTable extends Component {
     }
   }
 
-  sortBy = (itemValue, itemOrderAscending) => {
-    // itemOrder === 0 -> descending, 1 -> ascending
-    // console.log("itemValue", itemValue)
-    // console.log("out of sortBy", this.state.compareItemsData.sort((a, b) => (a[itemValue] < b[itemValue]) ? 1 : -1))
-    
+  handleClickSortBy = (itemStat) => {
 
-    if (itemOrderAscending) {
+    const activeStatsHeaders = this.state.activeStatsHeaders
+
+    let copyActiveStats = Object.assign({}, activeStatsHeaders)
+
+    // if the stat is not selected, set it to be selected and ascending
+    if (!activeStatsHeaders[itemStat].isSelected) {
+      copyActiveStats[itemStat].isSelected = true
+      copyActiveStats[itemStat].isAscending = true
+      
+      // make ascending sorting
       this.setState((prevState) => {
         return {
-          compareItemsData: prevState.compareItemsData.sort((a, b) => (a[itemValue] > b[itemValue]) ? 1 : -1),
-          itemOrderAscending: true
+          activeStatsHeaders: copyActiveStats,
+          compareItemsData: prevState.compareItemsData.sort((a, b) => (a[itemStat.replace(' ', '')] > b[itemStat.replace(' ', '')]) ? 1 : -1)
         }
       })
     }
+
+    // selected
     else {
-      this.setState((prevState) => {
-        return {
-          compareItemsData: prevState.compareItemsData.sort((a, b) => (a[itemValue] < b[itemValue]) ? 1 : -1),
-          itemOrderAscending: false
-        }
-      })
+      // if it the stat is currently selected and ascending, set it to be descending
+      if (copyActiveStats[itemStat].isAscending) {
+        copyActiveStats[itemStat].isAscending = false
+
+        // descending sorting
+        this.setState((prevState) => {
+          return {
+            activeStatsHeaders: copyActiveStats,
+            compareItemsData: prevState.compareItemsData.sort((a, b) => (a[itemStat.replace(' ', '')] < b[itemStat.replace(' ', '')]) ? 1 : -1)
+          }
+        })
+      }
+      // if the stat is selected and descending, set it to be not selected anymore since it was user's third click
+      else {
+        copyActiveStats[itemStat].isSelected = false
+      }
     }
+
+    Object.keys(copyActiveStats).map(currStat => {
+      if (currStat !== itemStat) {
+        copyActiveStats[currStat].isSelected = false
+        copyActiveStats[currStat].isAscending = false
+      }
+    })
+
   }
     
 
   render() {
-    
-    const { tableHeaders, compareItemsData } = this.state;
-    // console.log(compareItemsData)
+
+    const { activeStatsHeaders, compareItemsData, mobileSize } = this.state;
     
     return (
       <table>
         <thead>
           <tr>
-            <th className="table-image-header" style={{ display: this.state.mobileSize ? 'none' : 'table-cell' }}>
+            {/* don't show image column on screens where it wouldn't fit */}
+            <th className="table-image-header" style={{ display: mobileSize ? 'none' : 'table-cell' }}>
               Image
             </th>
             {
-              tableHeaders.map((header, index) => (
-                <th key={index} onClick={() => this.sortBy(header.replace(' ', ''), !this.state.itemOrderAscending)}>
+              Object.keys(activeStatsHeaders).map((header, index) => (
+                <th
+                  // conditional class name to ensure corrent arrows are shown for ascending/descending selection
+                  className={
+                    activeStatsHeaders[header].isSelected
+                      ? (activeStatsHeaders[header].isAscending ? 'stat-active ascending' : 'stat-active descending')
+                      : null
+                  }
+                  key={index}
+                  onClick={() => this.handleClickSortBy(header)}
+                >
                   <StatDisplay
                     statType="Table Headers"
                     statName={header}
-                    />
+                  />
                 </th>
               ))
             }
@@ -105,15 +164,17 @@ class ComparisonTable extends Component {
           {
             compareItemsData.map(item => (
               <tr key={item.id}>
-                <td style={{ display: this.state.mobileSize ? 'none' : 'table-cell' }}>
-                  <Image style={{ maxWidth: '350px' }} src={item.imgURL} />
+                {/* don't show image column on screens where it wouldn't fit */}
+                <td style={{ display: mobileSize ? 'none' : 'table-cell' }}>
+                  <Image style={{ maxWidth: '350px', margin: '0' }} src={item.imgURL} />
                 </td>
                 {
-                  tableHeaders.map((header, index) => (
+                  Object.keys(activeStatsHeaders).map((header, index) => (
                     <td key={index}>
                       <StatDisplay
                         statType="Table Data"
-                        statValue={item[`${header.replace(' ', '')}`]}
+                        // remove spaces to access statValue in JSON data
+                        statValue={item[header.replace(' ', '')]}
                       />
                     </td>
                   )) 
@@ -121,6 +182,7 @@ class ComparisonTable extends Component {
               </tr>
             ))
           }
+
         </tbody>
       </table>
     )

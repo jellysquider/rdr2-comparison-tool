@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Container from 'react-bulma-components/lib/components/container';
 import Heading from 'react-bulma-components/lib/components/heading';
 
-import GalleryContainer from '../ItemsGallery/GalleryContainer';
+import GalleryContainer from '../Gallery/GalleryContainer';
 import SearchBar from '../SearchBar';
 import CompareButton from '../CompareButton';
 
@@ -18,7 +18,7 @@ function DisplayItemsPage(props) {
 
   return (
     <Container>
-      <Heading>
+      <Heading >
         RDR2
       </Heading>
       <SearchBar />

@@ -23,8 +23,8 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
 - [ ] Change the default look of the scrollbar to be more like RDR2 (maybe by using something like [this](https://github.com/malte-wessel/react-custom-scrollbars))
 - [ ] Add tooltips when hovering over weapon stats icons
 - [ ] Preserve which items were selected when rendering search results (keep red card outline)
-- [ ] Preserve which table colums were selected for sorting (keep red font color)
-
+- [x] Preserve which table colums were selected for sorting (keep red font color)
+- [x] Display caret-up or -down depending on how items were sorted
 
 #### Search
 - [x] Add search functionality
