@@ -46,8 +46,6 @@ class DisplayTopCategoryItem extends Component {
       },
       currCategoryIndex: 0
     }
-
-    console.log("", this.props.compareItemsData.sort((a, b) => (a["firingRate"] < b["firingRate"]) ? 1 : -1)[0])
   }
 
   componentDidMount() {
