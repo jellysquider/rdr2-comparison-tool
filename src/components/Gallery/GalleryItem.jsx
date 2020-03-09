@@ -22,7 +22,6 @@ class GalleryItem extends React.Component {
   componentDidMount() {
     // make sure previously selected items stay selected
     if (this.props.itemsToCompare.includes(this.props.weapon)) {
-      console.log("arr includes this item", this.props.weapon)
       this.setState({
         isSelected: true
       })
@@ -38,8 +37,6 @@ class GalleryItem extends React.Component {
 
 
   render() {
-
-    // console.log(this.props.itemsToCompare)
 
     const { name, description, imgURL, ...otherProps } = this.props.weapon;
 

@@ -14,7 +14,7 @@ import Icon from 'react-bulma-components/lib/components/icon';
 import Level from 'react-bulma-components/lib/components/level';
 
 
-const StatDisplay = ({ statType, statName, statValue }) => {
+const DisplayItemStats = ({ statType, statName, statValue }) => {
   
   var iconType = {}
 
@@ -63,11 +63,11 @@ const StatDisplay = ({ statType, statName, statValue }) => {
         <React.Fragment>
           {
             iconType &&
-              <Icon>
+              <Icon style={{ position: 'relative', top: '15px'}}>
                 <FontAwesomeIcon icon={iconType} size="lg" />
               </Icon>
           }
-          {statName.toLowerCase()}
+          <p>{statName.toLowerCase()}</p>
         </React.Fragment>
       )
     case "Table Data":
@@ -84,10 +84,10 @@ const StatDisplay = ({ statType, statName, statValue }) => {
         </React.Fragment>
       )
     default:
-      console.log("null")
+      // console.log("null")
       return null
   }
   
 }
 
-export default StatDisplay;
+export default DisplayItemStats;

@@ -1,7 +1,4 @@
-@font-face
-  font-family: "Cuprum-Bold"
-  src: url("../fonts/Cuprum-Bold.ttf")
-  
+@import '../../_variables.sass'
 
 .level
   padding-top: 10px
@@ -32,7 +29,7 @@
   &.category-circle
     flex-grow: 0
     padding: 0 5px
-    color: #4a4a4a
+    color: $smokeBlack
 
     &.circle-active 
       color: white
@@ -41,6 +38,7 @@
   padding: 60px 0
 
   .card
+    box-shadow: none
     margin: 30px auto
     max-width: 350px
 
@@ -51,10 +49,6 @@
       box-shadow: none
       cursor: default
   
-  
-    box-shadow: none
-
-
 
 @media screen and (max-width: 768px)
   .level

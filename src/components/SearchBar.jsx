@@ -10,7 +10,7 @@ import {
   Input
 } from 'react-bulma-components/lib/components/form';
 
-import '../assets/styles/SearchBox.sass';
+import '../assets/styles/SearchBar.sass';
 
 import { getSearchResult } from '../Redux/searchQuery/sQActions';
 

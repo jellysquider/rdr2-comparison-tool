@@ -1,9 +1,11 @@
+@import '../../_variables.sass'
+  
 table
   padding-top: 30px
   border-spacing: 0px
 
 th
-  border-bottom: 2px solid #282828
+  border-bottom: 2px solid $smokeBlack
   padding: 10px
   text-align: center
   
@@ -12,28 +14,27 @@ th
   &:active,
   &:focus
     cursor: pointer
-    // box-shadow: 0 0 0 3px #bb2929
-    color: #bb2929
+    color: $red
 
-  &::after
+  & p::after
     content: '\23f7'
     padding-left: 5px
 
 td
-  border-bottom: 2px solid #282828
+  border-bottom: 2px solid $smokeBlack
   padding: 10px
   text-align: center
 
 .stat-active
-  color: #bb2929
+  color: $red
   
   &.descending
-    &::after
+    & p::after
       content: '\23f7'
       padding-left: 5px
 
   &.ascending
-    &::after
+    & p::after
       content: '\23f6'
       padding-left: 5px
 
