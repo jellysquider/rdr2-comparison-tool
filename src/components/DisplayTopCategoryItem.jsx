@@ -8,7 +8,4 @@ function DisplayTopCategoryItem() {
   )
 }
 
-
-
-
 export default DisplayTopCategoryItem;

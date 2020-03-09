@@ -21,15 +21,14 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
 - [x] Render the table component with correct URL when user click on the "Compare weapons" button
 - [x] Ensure the call-to-action button appears only when 2 or more weapons are selected
 - [ ] Change the default look of the scrollbar to be more like RDR2 (maybe by using something like [this](https://github.com/malte-wessel/react-custom-scrollbars))
-- [ ] Add tooltips when hovering over weapon stats icons
+- [ ] Add tooltips when hovering over weapon stats icons (although the game almost never explained what each icons meant so that might be a part of the UX to figure it out on your own)
 - [ ] Preserve which items were selected when rendering search results (keep red card outline)
 - [x] Preserve which table colums were selected for sorting (keep red font color)
 - [x] Display caret-up or -down depending on how items were sorted
 
 #### Search
 - [x] Add search functionality
-- [ ] Refactor search to account for special characters (e.g. space, apostrophe, dash in weapons' names)
-- [ ] Update search reducer to return new searchResults and searchQuery objects
+- [x] Refactor search to account for special characters (e.g. space, apostrophe, dash in weapons' names)
 
 
 #### Filter
