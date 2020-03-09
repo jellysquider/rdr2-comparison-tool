@@ -53,4 +53,4 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
 
 #### Long-term 
 - [ ] Improve functionality by enabling sorting by multiple attributes
-- [ ] Let users to create their own inventory and then compare items directly with their inventory (also keep their weapons in yellow color like the game does for <s>supreme</s> potions)
+- [ ] Let users create their own inventory and then compare items directly with their inventory (also keep their weapons in yellow color like the game does for <s>supreme</s> potions)
