@@ -13,6 +13,10 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
 * Run `npm install` inside of the root folder
 * Run `npm start` inside of the root folder and head over to `localhost:3000`
 
+## Contributing
+You are welcome to create a pull request even if you want to improve something as small as the text style as long as it adheres to RDR2 design scheme :)
+
+
 ### To-Do:
 
 #### UI, UX, and styles
