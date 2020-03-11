@@ -105,3 +105,6 @@ dist
 
 # editor-related files
 .vscode
+
+# firebase-files
+.firebase

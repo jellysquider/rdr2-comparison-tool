@@ -1,5 +1,4 @@
-# rdr2-comparison-tool 
-`Note: core functionality is under development`
+# rdr2-comparison-tool
 
 A simple website to compare in-game weapons of Read Dead Redemption 2
 
