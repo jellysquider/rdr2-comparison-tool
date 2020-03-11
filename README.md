@@ -17,6 +17,9 @@ I used [create-react-app](https://github.com/facebook/create-react-app) to initi
 You are welcome to create a pull request even if you want to improve something as small as the text style as long as it adheres to RDR2 design scheme :)
 
 
+## Disclaimer
+The design of the website follows the design of the game, I do not claim ownership of any of the assets I used (as such items' data is from [Fandom](https://reddead.fandom.com/wiki/Weapons_in_Redemption_2), fonts from [GTAFORUMS' user Peter1501](https://gtaforums.com/topic/927728-rdr-2-fonts/), icons from [FontAwesome](https://fontawesome.com/) and other styles from the game itself).
+
 ### To-Do:
 
 #### UI, UX, and styles
