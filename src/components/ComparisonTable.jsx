@@ -56,6 +56,7 @@ class ComparisonTable extends Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
   }

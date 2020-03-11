@@ -1,26 +1,21 @@
 @import '../../_variables.sass'
 
 .level
+  display: flex
+  justify-content: center
   padding-top: 10px
 
-  &.category-nav
-    margin: 0 auto
-    width: 30%
-
-  &.category-nav-circles
-    margin: 0 auto
-    width: 15%
-
+  &:not(:last-child)
+    margin-bottom: 0
 
 .level-item
-  &.nav-button
-    flex-grow: 0
+  flex-grow: 0 !important
 
-    button
-      font-size: 25px
-      font-family: "Cuprum-Bold"
-      font-weight: bold
-      padding: 2px 10px
+  button
+    font-size: 25px
+    font-family: "Cuprum-Bold"
+    font-weight: bold
+    padding: 2px 10px
     
   &.category-name
     flex-grow: 0
@@ -33,6 +28,9 @@
 
     &.circle-active 
       color: white
+  
+  &:not(:last-child)
+    margin-bottom: 0
 
 .nav-wrapper
   padding: 60px 0
@@ -48,11 +46,5 @@
     &:focus
       box-shadow: none
       cursor: default
+
   
-
-@media screen and (max-width: 768px)
-  .level
-    display: flex
-
-  .level-item:not(:last-child)
-    margin-bottom: 0

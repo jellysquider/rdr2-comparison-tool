@@ -9,7 +9,6 @@ th
   padding: 10px
   text-align: center
   
-
   &:hover,
   &:active,
   &:focus
@@ -17,7 +16,9 @@ th
     color: $red
 
   & p::after
-    content: '\23f7'
+    content: '\f0d7'
+    font-family: 'Font Awesome 5'
+    font-weight: 900
     padding-left: 5px
 
 td
@@ -26,20 +27,33 @@ td
   text-align: center
 
 .stat-active
-  color: $red
+  color: $red !important
   
   &.descending
     & p::after
-      content: '\23f7'
+      content: '\f0d7'
+      font-family: 'Font Awesome 5'
+      font-weight: 900
       padding-left: 5px
 
   &.ascending
     & p::after
-      content: '\23f6'
+      content: '\f0d8'
+      font-family: 'Font Awesome 5'
+      font-weight: 900
       padding-left: 5px
 
 .table-image-header
   &::after
     content: none !important
 
+// for touch devices
+@media (hover: none)
+  .container
+    overflow-x: scroll
 
+  th
+    &:hover,
+    &:active,
+    &:focus
+      color: white

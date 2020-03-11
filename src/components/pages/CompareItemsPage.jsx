@@ -36,13 +36,11 @@ function CompareItemsPage({ match }) {
     }
     
     return (
-      <div>
-        <Container>
-          <Header header="Compare Items" />
-          <ComparisonTable compareItemsData={compareItemsData} />
-          <DisplayTopCategoryItem compareItemsData={compareItemsData} />
-        </Container>
-      </div>
+      <Container>
+        <Header header="Compare Items" />
+        <ComparisonTable compareItemsData={compareItemsData} />
+        <DisplayTopCategoryItem compareItemsData={compareItemsData} />
+      </Container>
     )
   }
 

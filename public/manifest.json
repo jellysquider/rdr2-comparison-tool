@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "RDR2 Compare Weapons",
+  "name": "RDR2 Weapon Comparison Tool",
   "icons": [
     {
       "src": "android-chrome-144x144.png",
