@@ -1,14 +1,14 @@
 // combines all of the reducers together
 
 // store user state
-import { combineReducers } from 'redux';
+import { combineReducers } from 'redux'
 
-import { searchQueryReducer } from './searchQuery/sQReducer';
-import { updateItemsToCompareReducer } from './itemComparison/iCReducer';
+import { searchQueryReducer } from './searchQuery/sQReducer'
+import { updateItemsToCompareReducer } from './itemComparison/iCReducer'
 
 const rootReducer = combineReducers({
   searchQueryReducer,
-  updateItemsToCompareReducer
-});
+  updateItemsToCompareReducer,
+})
 
-export default rootReducer;
+export default rootReducer

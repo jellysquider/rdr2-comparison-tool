@@ -1,18 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
-import '../assets/styles/Button.sass';
+import '../assets/styles/Button.sass'
 
 const CompareButton = ({ link }) => {
-
   return (
     <div className="compare-button-wrapper">
-      <Link to={`/compareWeapons/${link}`}>
-        Compare selected weapons
-      </Link>
+      <Link to={`/compareWeapons/${link}`}>Compare selected weapons</Link>
     </div>
   )
-
 }
 
-export default CompareButton;
+CompareButton.propTypes = {
+  link: PropTypes.string.isRequired,
+}
+
+export default CompareButton

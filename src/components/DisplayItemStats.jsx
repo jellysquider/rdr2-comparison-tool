@@ -1,5 +1,7 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react'
+import PropTypes from 'prop-types'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faHeartBroken,
   faSignalStream,
@@ -7,47 +9,45 @@ import {
   faBullseyeArrow,
   faSyncAlt,
   faSpinner,
-  faSackDollar
-} from '@fortawesome/pro-solid-svg-icons';
+  faSackDollar,
+} from '@fortawesome/pro-solid-svg-icons'
 
-import Icon from 'react-bulma-components/lib/components/icon';
-import Level from 'react-bulma-components/lib/components/level';
-
+import Icon from 'react-bulma-components/lib/components/icon'
+import Level from 'react-bulma-components/lib/components/level'
 
 const DisplayItemStats = ({ statType, statName, statValue }) => {
-  
   var iconType = {}
 
-  if (statType === "Gallery" || statType === "Table Headers") {
+  if (statType === 'Gallery' || statType === 'Table Headers') {
     switch (statName.replace(' ', '')) {
-      case "damage":
+      case 'damage':
         iconType = faHeartBroken
-        break;
-      case "range":
+        break
+      case 'range':
         iconType = faSignalStream
-        break;
-      case "firingRate":
+        break
+      case 'firingRate':
         iconType = faRabbitFast
-        break;
-      case "accuracy":
+        break
+      case 'accuracy':
         iconType = faBullseyeArrow
-        break;
-      case "reloadingSpeed":
+        break
+      case 'reloadingSpeed':
         iconType = faSyncAlt
-        break;
-      case "ammoCapacity":
+        break
+      case 'ammoCapacity':
         iconType = faSpinner
-        break;
-      case "cost":
+        break
+      case 'cost':
         iconType = faSackDollar
-        break;
+        break
       default:
         iconType = null
     }
   }
-  
+
   switch (statType) {
-    case "Gallery":
+    case 'Gallery':
       return (
         <React.Fragment>
           <Level.Item>
@@ -58,36 +58,40 @@ const DisplayItemStats = ({ statType, statName, statValue }) => {
           </Level.Item>
         </React.Fragment>
       )
-    case "Table Headers":
+    case 'Table Headers':
       return (
         <React.Fragment>
-          {
-            iconType &&
-              <Icon style={{ position: 'relative', top: '15px'}}>
-                <FontAwesomeIcon icon={iconType} size="lg" />
-              </Icon>
-          }
+          {iconType && (
+            <Icon style={{ position: 'relative', top: '15px' }}>
+              <FontAwesomeIcon icon={iconType} size="lg" />
+            </Icon>
+          )}
           <p>{statName.toLowerCase()}</p>
         </React.Fragment>
       )
-    case "Table Data":
+    case 'Table Data':
       return (
         <React.Fragment>
-          {
-            // if statValue is a number, then parse it as float
-            // if it's null then display 0 in the table
-            // otherwise display it as is
-            typeof { statValue } == "number"
-            ? (parseFloat(`${statValue}`).toFixed(1))
-            : (statValue == null) ? 0 : statValue
-          }
+          {// if statValue is a number, then parse it as float
+          // if it's null then display 0 in the table
+          // otherwise display it as is
+          typeof { statValue } === 'number'
+            ? parseFloat(`${statValue}`).toFixed(1)
+            : statValue == null
+            ? 0
+            : statValue}
         </React.Fragment>
       )
     default:
       // console.log("null")
       return null
   }
-  
 }
 
-export default DisplayItemStats;
+DisplayItemStats.propTypes = {
+  statType: PropTypes.string.isRequired,
+  statName: PropTypes.string.isRequired,
+  statValue: PropTypes.number.isRequired,
+}
+
+export default DisplayItemStats

@@ -1,6 +1,7 @@
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import '../assets/styles/Header.sass';
+import '../assets/styles/Header.sass'
 
 function Header({ header }) {
   return (
@@ -10,4 +11,8 @@ function Header({ header }) {
   )
 }
 
-export default Header;
+Header.propTypes = {
+  header: PropTypes.string.isRequired,
+}
+
+export default Header
